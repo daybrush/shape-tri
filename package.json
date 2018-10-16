@@ -1,7 +1,7 @@
 {
   "name": "shape-tri",
   "version": "0.0.2",
-  "description": "",
+  "description": "Make CSS Triangle Shape",
   "main": "dist/shapetri.js",
   "module": "dist/shapetri.esm.js",
   "sideEffects": false,
