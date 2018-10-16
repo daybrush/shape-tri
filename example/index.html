@@ -1,0 +1,26 @@
+<script src="../release/latest/shapetri.min.js"></script>
+<style>
+.__shape-tri-triangle, .percent-vertical, .percent-horizontal {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+}
+.percent-vertical {
+  width: 100px;
+}
+.percent-horizontal {
+  /* height: 100px; */
+}
+</style>
+<div id="container"></div>
+
+<script>
+  container.appendChild(ShapeTri.tri({className: "percent-vertical", strokeWidth: "10px", stroke: "#333", radius: "40px"}));
+  container.appendChild(ShapeTri.tri({className: "percent-vertical", strokeWidth: "10px", stroke: "#55f", radius: "40px", direction: "top"}));
+  container.appendChild(ShapeTri.tri({className: "percent-horizontal", strokeWidth: "10px", stroke: "#f5f", radius: "40px", direction: "left"}));
+  container.appendChild(ShapeTri.tri({className: "percent-horizontal", strokeWidth: "10px", stroke: "#f55", radius: "40px", direction: "right"}));
+  container.appendChild(ShapeTri.tri({strokeWidth: "10px", stroke: "#333", radius: "30px"}));
+  container.appendChild(ShapeTri.tri({strokeWidth: "10px", stroke: "#333", radius: "30px", direction: "left"}));
+  container.appendChild(ShapeTri.tri({strokeWidth: "10px", stroke: "#333", radius: "30px", direction: "right"}));
+  container.appendChild(ShapeTri.tri({strokeWidth: "10px", stroke: "#333", radius: "30px", direction: "top"}));
+</script>
