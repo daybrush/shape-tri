@@ -2,7 +2,7 @@
 Copyright (c) 2018 Daybrush
 license: MIT
 author: Daybrush
-repository: git+https://github.com/daybrush/shape-tri.git
+repository: https://github.com/daybrush/shape-tri
 @version 0.0.2
 */
 (function (global, factory) {
