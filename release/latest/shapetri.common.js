@@ -91,7 +91,7 @@ function tri(_a) {
   var padding = isVertical ? "calc(50% * 1.7321 + " + strokeWidth + " * 0.132)" : // (100% - strokeWidth) / r3 * 2 + strokeWidth
   "calc(200% / 1.7321 - " + strokeWidth + " * 1.154 + " + strokeWidth + ")";
   var reverseDirection = REVERSE[direction];
-  var sideHTML = "<div class=\"" + SIDE_CLASS + "1\" style=\"" + POSITION_ABSOLUTE + reverseDirection + ": 0;\n  display:inline-block;width:" + width + ";height:" + height + ";border-radius:" + half + ";\n  background:" + stroke + ";\"><div class=\"" + SIDE_CLASS + "2\"\n  style=\"" + sideCSS + "transform:rotate(" + sign * 60 + "deg);\"></div><div class=\"" + SIDE_CLASS + "3\"\n  style=\"" + sideCSS + directionProperty + ":100%;\n  margin-" + directionProperty + ":-" + strokeWidth + ";\n  transform:rotate(" + sign * 120 + "deg)\"></div></div><div class=\"" + TRI_CLASS + "percent\" style=\"position:relative;\n  width:100%;padding-top:" + padding + ";\"\n  ></div>";
+  var sideHTML = "<div class=\"" + SIDE_CLASS + "1\" style=\"" + POSITION_ABSOLUTE + reverseDirection + ": 0;\n  " + directionProperty + ":0;display:inline-block;width:" + width + ";height:" + height + ";border-radius:" + half + ";\n  background:" + stroke + ";\"><div class=\"" + SIDE_CLASS + "2\"\n  style=\"" + sideCSS + "transform:rotate(" + sign * 60 + "deg);\"></div><div class=\"" + SIDE_CLASS + "3\"\n  style=\"" + sideCSS + directionProperty + ":100%;\n  margin-" + directionProperty + ":-" + strokeWidth + ";\n  transform:rotate(" + sign * 120 + "deg)\"></div></div><div class=\"" + TRI_CLASS + "percent\" style=\"position:relative;\n  width:100%;padding-top:" + padding + ";\"\n  ></div>";
 
   if (getComputedStyle(container).position === "static") {
     container.style.position = "relative";
