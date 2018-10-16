@@ -47,10 +47,10 @@ function makeDOM(tag, className) {
 }
 
 function dom(el) {
-  var strokeWidth = el.getAttribute("data-stroke-width");
-  var stroke = el.getAttribute("data-stroke");
-  var direction = el.getAttribute("data-direction");
-  var fill = el.getAttribute("data-fill");
+  var strokeWidth = el.getAttribute("data-stroke-width") || undefined;
+  var stroke = el.getAttribute("data-stroke") || undefined;
+  var direction = el.getAttribute("data-direction") || undefined;
+  var fill = el.getAttribute("data-fill") || undefined;
   return tri({
     strokeWidth: strokeWidth,
     stroke: stroke,
