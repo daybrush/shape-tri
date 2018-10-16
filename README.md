@@ -20,7 +20,13 @@ tri({
   stroke?: string
 });
 ```
+
+
 ## How to Use
+
+```html
+<script src="//daybrush.github.io/shape-tri/release/latest/shapetri.min.js"></script>
+```
 ```js
 import {tri} from "shape-tri";
 

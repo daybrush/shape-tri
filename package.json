@@ -15,7 +15,6 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d ./release/ --dest=./ --add",
     "build": "npm run build:rollup && npm run declaration && npm run release:latest",
     "declaration": "rm -rf declaration && tsc -p tsconfig.declaration.json",
     "build:rollup": "rollup -c",
@@ -27,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daybrush/shape-tri.git"
+    "url": "https://github.com/daybrush/shape-tri"
   },
   "author": "Daybrush",
   "license": "MIT",
